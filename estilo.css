@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+    
+    body{
+    font-family: calibri;
+    background-color: rgb(22, 21, 25);
+    }
+    
+    .formulario{
+    font-family: calibri;
+    font-size: 13px;
+    width: 380px;
+    height: 480px;
+    background-color: rgba(37,35,46,0.819);
+    margin: auto;
+    margin-top: 180px;
+    margin-bottom: 180px;
+    padding: 30px 30px;
+    border: 0.15px solid rgba(173,197,253,0.171);
+    border-radius: 5px;
+    color: rgba(133,144,170,0.805)
+    }
+    
+    .formulario h5 {
+    margin: 0;
+    text-align: left;
+    height: 50px;
+    margin-bottom: 5px;
+    font-size: 26px;
+    color:rgb(159, 177, 218)
+    }
+    
+    .formulario__label{
+    font-family: calibri;
+    cursor: pointer;
+    
+    }
+    
+    .formulario__grupo-input{
+    position: relative;
+    }
+    
+    
+    .formulario__input{
+    font-family: calibri;
+    width: 100%;
+    margin-bottom: 0 px;
+    padding: 11px 10px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 5px;
+    }
+    
+    .formulario__estadovalidacion{
+    position: absolute;
+    right: 10px;
+    bottom: 15px;
+    font-size: 16px;
+    }
+    
+    .formulario__inputerror{
+    display: none;
+    font-size: 12px;
+    margin-bottom: 0;
+    }
+    
+    .formulario__inputerror-activado, .formulario__mensaje-exito-activado{
+    display: block;
+    }
+        
+    .boton {
+    cursor: pointer;
+    font-family: calibri;
+    width: 100%;
+    height: 40px;
+    background:#4379f7 ;
+    border: 0.5 solid #000000bb;
+    color: white;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    }
+    
+    .formulario__mensaje-exito{
+    display: none;
+    font-size: 12px;
+    color: green;
+    padding: 10px 0;
+    text-align: center;
+    }
+    
+    
+    .formulario__grupocorrecto .formulario__estadovalidacion{
+    color: green;
+    }
+    
+    .formulario__grupoincorrecto .formulario__label{
+    color: red;
+    opacity: 1;
+    }
+    
+    .formulario__grupoincorrecto .formulario__estadovalidacion{
+    color: red;
+    }
+    
+    
+    .formulario_grupoincorrecto .formulario__input{
+    border: 1px solid red;
+    }
+    
