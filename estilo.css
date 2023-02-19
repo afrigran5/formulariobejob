@@ -13,7 +13,7 @@
     font-family: calibri;
     font-size: 13px;
     width: 380px;
-    height: 480px;
+    height: 500px;
     background-color: rgba(37,35,46,0.819);
     margin: auto;
     margin-top: 180px;
@@ -34,9 +34,9 @@
     }
     
     .formulario__label{
+    font-size: 14px;
     font-family: calibri;
     cursor: pointer;
-    
     }
     
     .formulario__grupo-input{
@@ -47,39 +47,44 @@
     .formulario__input{
     font-family: calibri;
     width: 100%;
-    margin-bottom: 0 px;
+    margin-top: 10px;
+    margin-bottom: 10 px;
     padding: 11px 10px;
     font-size: 14px;
     font-weight: bold;
     border-radius: 5px;
     }
     
-    .formulario__estadovalidacion{
+    .formulario__iconoe{
     position: absolute;
     right: 10px;
     bottom: 15px;
     font-size: 16px;
+    opacity: 0;
     }
+
     
-    .formulario__inputerror{
-    display: none;
+    .formulario__input-error{
     font-size: 12px;
-    margin-bottom: 0;
+    margin-bottom: 10;
+    color: red;
+    display: none;
     }
     
-    .formulario__inputerror-activado, .formulario__mensaje-exito-activado{
+    .formulario__input-error-activo, .formulario__mensaje-exito-activo{
     display: block;
     }
         
-    .boton {
+    .formulario__boton {
     cursor: pointer;
     font-family: calibri;
     width: 100%;
-    height: 40px;
+    height: 50px;
     background:#4379f7 ;
     border: 0.5 solid #000000bb;
     color: white;
     margin-bottom: 20px;
+    margin-top: 30px;
     border-radius: 5px;
     }
     
@@ -91,22 +96,23 @@
     text-align: center;
     }
     
-    
-    .formulario__grupocorrecto .formulario__estadovalidacion{
+    .formulario__grupo-correcto .formulario__iconoe{
     color: green;
+    opacity:1;
     }
     
-    .formulario__grupoincorrecto .formulario__label{
+    .formulario__grupo-incorrecto .formulario__input-error{
     color: red;
     opacity: 1;
     }
     
-    .formulario__grupoincorrecto .formulario__estadovalidacion{
+    .formulario__grupo-incorrecto .formulario__iconoe{
     color: red;
+    opacity: 1;
     }
     
     
-    .formulario_grupoincorrecto .formulario__input{
+    .formulario__grupo-incorrecto .formulario__input{
     border: 1px solid red;
     }
     

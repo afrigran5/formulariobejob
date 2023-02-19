@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario crear cuenta</title>
+    <link rel="stylesheet" href="estilo.css">
+   
+</head>
+<body>
+    <form action="" class="formulario" id="formulario">
+        <h5>Create Account</h5>
+        <div class="formulario__grupo" id="grupo__nombre">
+            <label class="formulario__label">Nombre</label>
+            <div class="formulario__grupo-input">
+                <input type="text" class="formulario__input" name="nombre" id="nombre" required>
+                <i class="formulario__iconoe fa-solid fa-circle-exclamation"></i>
+            </div>
+            <p class="formulario__input-error">El nombre solo debe contener letras</p>
+        </div>
+
+        <div class="formulario__grupo" id="grupo__email">
+            <label class="formulario__label">Email</label>
+            <div class="formulario__grupo-input">
+                <input type="email" class="formulario__input" name="email" id="email" required>
+                <i class="formulario__iconoe fa-solid fa-circle-exclamation"></i>
+            </div>
+            <p class="formulario__input-error">Email es inválido</p>
+        </div>
+
+        <div class="formulario__grupo" id="grupo__password">
+            <label class="formulario__label">Clave</label>
+            <div class="formulario__grupo-input">
+                <input type="password" class="formulario__input" name="password" id="password" required minlength="8">
+                <i class="formulario__iconoe fa-solid fa-circle-exclamation"></i>
+            </div>
+            <p class="formulario__input-error">La clave debe tener al menos 8 caracteres</p>
+        </div>
+
+        <div class="formulario__grupo" id="grupo__password2">
+            <label class="formulario__label">Confirme su clave</label>
+            <div class="formulario__grupo-input">
+                <input type="password" class="formulario__input" name="password2" id="password2">
+                <i class="formulario__iconoe fa-solid fa-circle-exclamation"></i>
+            </div>
+            <p class="formulario__input-error">Las contraseñas no coinciden</p>
+        </div>
+
+    
+        <div class="formulario__grupo formulario__grupo-enviar">
+            <input class="formulario__boton" type="submit" value="Enviar">
+                <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">¡La inscripción ha sido correcta!</p>
+        </div>
+    </form>
+
+    <script src="index.js"></script>
+    <script src="https://kit.fontawesome.com/b9542759ed.js" crossorigin="anonymous"></script>
+</body>
+</html>
